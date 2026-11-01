@@ -3,20 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Horario</title>
+    <title>Seleccionar clase</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Horario</h1>
-    <h2>Dia hora</h2>
-    <label for="clase">Clase:</label>
-    <select name="clase" id="clase">
-      <option value="#">1DAW</option>
-      <option value="#">2DAW</option>
-      <option value="#">1ASIR</option>
-      <option value="#">2ASIR</option>
-    </select>
-    <a href="clase.html">Siguiente</a>
-    <a href="#">Cancelar</a>
+    <main>
+      <header>
+        <h1>Clase</h1>
+      </header>
+
+      <h2>Seleccionar clase</h2>
+
+      <form action="horario.html" method="get">
+        <div>
+          <label for="clase">Clase:</label>
+          <select name="clase" id="clase" required>
+            <option value="" hidden>Seleccionar Clase...</option>
+            <option value="1A">1º A</option>
+            <option value="1B">1º B</option>
+            <option value="2A">2º A</option>
+            <option value="2B">2º B</option>
+          </select>
+        </div>
+
+        <div>
+          <input type="submit" value="Siguiente" />
+          <input type="reset" value="Cancelar" />
+        </div>
+      </form>
+    </main>
   </body>
 </html>

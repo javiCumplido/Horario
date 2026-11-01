@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase del Lunes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Clase</h1>
+        <p>Lunes 3</p>
+      </header>
+
+      <section>
+        <form action="#" method="post">
+          <input type="hidden" name="dia" value="Lunes" />
+          <input type="hidden" name="hora" value="3" />
+
+          <div>
+            <label for="asignatura">Asignatura:</label>
+            <select name="asignatura" id="asignatura" required>
+              <option value="">Seleccionar Asignatura...</option>
+              <option value="1">Programacion</option>
+              <option value="2">Base de Datos</option>
+              <option value="3">Servidor</option>
+              <option value="4">Cliente</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="profesores">Profesor:</label>
+            <select name="profesores" id="profesores" required>
+              <option value="">Seleccionar Profesor...</option>
+              <option value="1">Juan Pérez</option>
+              <option value="2">María García</option>
+              <option value="3">Carlos López</option>
+            </select>
+          </div>
+
+          <div>
+            <input type="submit" value="Añadir" />
+            <a href="horario.html">Volver</a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
